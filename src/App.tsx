@@ -90,7 +90,7 @@ function App() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-[1440px] px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-[1440px] gap-10 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start lg:px-8">
           <section id="mundos" aria-labelledby="mundos-titulo">
             <div className="flex items-end justify-between gap-4 border-b border-black/10 pb-4">
               <div>
@@ -314,8 +314,87 @@ function App() {
               </article>
             </div>
           </section>
+
+          <section id="relays" aria-labelledby="relays-titulo">
+            <div className="flex items-end justify-between gap-4 border-b border-black/10 pb-4">
+              <div>
+                <p className="text-xs font-bold uppercase text-mine-700">Infraestrutura</p>
+                <h2 className="mt-1 text-2xl font-extrabold" id="relays-titulo">Rede de relays</h2>
+              </div>
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-mine-700">
+                <span className="size-2 rounded-full bg-mine-500" />3 ativos
+              </span>
+            </div>
+
+            <div className="mt-5 grid gap-4 md:grid-cols-3 lg:grid-cols-1">
+              <article className="rounded-md border border-black/10 bg-white p-4 shadow-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-bold uppercase text-ink-700">Brasil, Sudeste</p>
+                    <h3 className="mt-1 text-lg font-extrabold">São Paulo</h3>
+                  </div>
+                  <span className="rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700">Operacional</span>
+                </div>
+                <dl className="mt-5 grid grid-cols-2 gap-3 border-t border-black/10 pt-4 text-sm">
+                  <div><dt className="text-xs text-ink-700">Latência média</dt><dd className="mt-1 font-extrabold">12 ms</dd></div>
+                  <div><dt className="text-xs text-ink-700">Capacidade</dt><dd className="mt-1 font-extrabold">64%</dd></div>
+                </dl>
+                <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-black/10" aria-label="Capacidade em 64 por cento">
+                  <div className="h-full w-[64%] bg-mine-500" />
+                </div>
+              </article>
+
+              <article className="rounded-md border border-black/10 bg-white p-4 shadow-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-bold uppercase text-ink-700">Chile, Central</p>
+                    <h3 className="mt-1 text-lg font-extrabold">Santiago</h3>
+                  </div>
+                  <span className="rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700">Operacional</span>
+                </div>
+                <dl className="mt-5 grid grid-cols-2 gap-3 border-t border-black/10 pt-4 text-sm">
+                  <div><dt className="text-xs text-ink-700">Latência média</dt><dd className="mt-1 font-extrabold">48 ms</dd></div>
+                  <div><dt className="text-xs text-ink-700">Capacidade</dt><dd className="mt-1 font-extrabold">41%</dd></div>
+                </dl>
+                <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-black/10" aria-label="Capacidade em 41 por cento">
+                  <div className="h-full w-[41%] bg-mine-500" />
+                </div>
+              </article>
+
+              <article className="rounded-md border border-black/10 bg-white p-4 shadow-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-bold uppercase text-ink-700">EUA, Leste</p>
+                    <h3 className="mt-1 text-lg font-extrabold">Miami</h3>
+                  </div>
+                  <span className="rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700">Operacional</span>
+                </div>
+                <dl className="mt-5 grid grid-cols-2 gap-3 border-t border-black/10 pt-4 text-sm">
+                  <div><dt className="text-xs text-ink-700">Latência média</dt><dd className="mt-1 font-extrabold">112 ms</dd></div>
+                  <div><dt className="text-xs text-ink-700">Capacidade</dt><dd className="mt-1 font-extrabold">29%</dd></div>
+                </dl>
+                <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-black/10" aria-label="Capacidade em 29 por cento">
+                  <div className="h-full w-[29%] bg-mine-500" />
+                </div>
+              </article>
+            </div>
+
+            <div className="mt-5 border-l-2 border-mine-500 bg-mine-50 p-4 text-sm leading-6 text-ink-700">
+              Os relays encaminham as conexões sem hospedar os mundos. O progresso permanece no computador de quem abriu o túnel.
+            </div>
+          </section>
         </div>
       </main>
+
+      <footer id="sobre" className="border-t border-black/10 bg-ink-900 text-white">
+        <div className="mx-auto flex max-w-[1440px] flex-col gap-4 px-4 py-7 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+          <div>
+            <p className="font-extrabold">MineTunnel Control Center</p>
+            <p className="mt-1 text-sm text-white/65">Demonstração acadêmica de uma interface para túneis Minecraft.</p>
+          </div>
+          <p className="text-xs text-white/55">Interface estática • Fase 2</p>
+        </div>
+      </footer>
     </div>
   )
 }
