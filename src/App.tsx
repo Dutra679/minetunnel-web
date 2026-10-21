@@ -101,9 +101,9 @@ function App() {
             </div>
 
             <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center"
+                  className="aspect-[16/9] bg-cover bg-center sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '0% 0%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Vale verde com montanhas e cachoeiras"
@@ -124,9 +124,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center"
+                  className="aspect-[16/9] bg-cover bg-center sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '25% 0%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Ilhas nevadas cercadas pelo oceano"
@@ -145,9 +145,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center grayscale-[25%]"
+                  className="aspect-[16/9] bg-cover bg-center grayscale-[25%] sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '50% 0%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Caverna profunda com cristais luminosos"
@@ -166,9 +166,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center"
+                  className="aspect-[16/9] bg-cover bg-center sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '75% 0%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Floresta antiga com grandes casas nas árvores"
@@ -187,9 +187,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center"
+                  className="aspect-[16/9] bg-cover bg-center sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '100% 0%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Cidade portuária com muralhas e embarcações"
@@ -208,9 +208,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center grayscale-[25%]"
+                  className="aspect-[16/9] bg-cover bg-center grayscale-[25%] sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '0% 100%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Planície aberta com campos e pequenas vilas"
@@ -229,9 +229,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center"
+                  className="aspect-[16/9] bg-cover bg-center sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '25% 100%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Montanha vermelha com cânions e pontes"
@@ -250,9 +250,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center"
+                  className="aspect-[16/9] bg-cover bg-center sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '50% 100%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Reino construído em ilhas flutuantes"
@@ -271,9 +271,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center grayscale-[25%]"
+                  className="aspect-[16/9] bg-cover bg-center grayscale-[25%] sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '75% 100%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Vila medieval com ferrarias e oficinas"
@@ -292,9 +292,9 @@ function App() {
                 </div>
               </article>
 
-              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+              <article className="grid overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:min-h-44 sm:grid-cols-[9rem_minmax(0,1fr)]">
                 <div
-                  className="bg-cover bg-center"
+                  className="aspect-[16/9] bg-cover bg-center sm:aspect-auto"
                   style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '100% 100%', backgroundSize: '500% 200%' }}
                   role="img"
                   aria-label="Acampamento de expedição no alto das montanhas"
