@@ -1,3 +1,5 @@
+import worldAtlas from './assets/world-atlas.png'
+
 function App() {
   return (
     <div className="min-h-screen bg-canvas text-ink-900">
@@ -96,6 +98,220 @@ function App() {
                 <h2 className="mt-1 text-2xl font-extrabold" id="mundos-titulo">Mundos disponíveis</h2>
               </div>
               <p className="text-sm text-ink-700">10 resultados</p>
+            </div>
+
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '0% 0%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Vale verde com montanhas e cachoeiras"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Vale Esmeralda</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700">
+                      <span className="size-1.5 rounded-full bg-mine-500" />Online
+                    </span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Construções cooperativas entre vales, rios e montanhas.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">2 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">28 ms</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '25% 0%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Ilhas nevadas cercadas pelo oceano"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Ilhas do Norte</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700"><span className="size-1.5 rounded-full bg-mine-500" />Online</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Sobrevivência em arquipélagos gelados e rotas marítimas.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">3 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">31 ms</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center grayscale-[25%]"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '50% 0%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Caverna profunda com cristais luminosos"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Caverna Central</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-neutral-100 px-2 py-1 text-[11px] font-bold text-neutral-600"><span className="size-1.5 rounded-full bg-neutral-400" />Offline</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Mineração técnica em uma rede de cavernas cristalinas.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">0 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">--</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '75% 0%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Floresta antiga com grandes casas nas árvores"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Bosque Antigo</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700"><span className="size-1.5 rounded-full bg-mine-500" />Online</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Vilas suspensas e trilhas escondidas em uma mata ancestral.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">5 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">37 ms</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '100% 0%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Cidade portuária com muralhas e embarcações"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Cidade do Porto</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700"><span className="size-1.5 rounded-full bg-mine-500" />Online</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Comércio, navegação e grandes projetos na costa do mapa.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">6 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">40 ms</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center grayscale-[25%]"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '0% 100%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Planície aberta com campos e pequenas vilas"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Horizonte Survival</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-neutral-100 px-2 py-1 text-[11px] font-bold text-neutral-600"><span className="size-1.5 rounded-full bg-neutral-400" />Offline</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Sobrevivência clássica em planícies amplas e produtivas.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">0 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">--</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '25% 100%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Montanha vermelha com cânions e pontes"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Montanha Vermelha</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700"><span className="size-1.5 rounded-full bg-mine-500" />Online</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Exploração em cânions, minas profundas e terreno extremo.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">8 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">46 ms</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '50% 100%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Reino construído em ilhas flutuantes"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Reino das Nuvens</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700"><span className="size-1.5 rounded-full bg-mine-500" />Online</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Pontes aéreas conectam fortalezas acima das nuvens.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">9 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">49 ms</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center grayscale-[25%]"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '75% 100%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Vila medieval com ferrarias e oficinas"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Vila dos Ferreiros</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-neutral-100 px-2 py-1 text-[11px] font-bold text-neutral-600"><span className="size-1.5 rounded-full bg-neutral-400" />Offline</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Oficinas medievais, forjas coletivas e economia local.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">0 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">--</dd></div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="grid min-h-44 grid-cols-[7rem_minmax(0,1fr)] overflow-hidden rounded-md border border-black/10 bg-white shadow-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: `url(${worldAtlas})`, backgroundPosition: '100% 100%', backgroundSize: '500% 200%' }}
+                  role="img"
+                  aria-label="Acampamento de expedição no alto das montanhas"
+                />
+                <div className="flex min-w-0 flex-col p-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-extrabold leading-5">Expedição 27</h3>
+                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mine-50 px-2 py-1 text-[11px] font-bold text-mine-700"><span className="size-1.5 rounded-full bg-mine-500" />Online</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-5 text-ink-700">Acampamento avançado para aventuras e descobertas em grupo.</p>
+                  <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-black/10 pt-3 text-xs">
+                    <div><dt className="text-ink-700">Versão</dt><dd className="mt-1 font-bold">1.21.1</dd></div>
+                    <div><dt className="text-ink-700">Jogadores</dt><dd className="mt-1 font-bold">11 / 20</dd></div>
+                    <div><dt className="text-ink-700">Latência</dt><dd className="mt-1 font-bold">55 ms</dd></div>
+                  </dl>
+                </div>
+              </article>
             </div>
           </section>
         </div>
