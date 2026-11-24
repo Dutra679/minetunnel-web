@@ -9,7 +9,13 @@ export async function fetchWorlds(): Promise<World[]> {
     throw new Error(`Não foi possível carregar os mundos (${response.status}).`)
   }
 
-  const data: unknown = await response.json()
+  let data: unknown
+
+  try {
+    data = await response.json()
+  } catch {
+    throw new Error('A fonte de dados dos mundos está indisponível ou retornou conteúdo inválido.')
+  }
 
   if (!Array.isArray(data)) {
     throw new Error('A fonte de dados retornou um formato inválido.')
