@@ -6,7 +6,7 @@ export function Footer() {
           <p className="footer-title">MineTunnel Control Center</p>
           <p>Demonstração acadêmica de uma interface para túneis Minecraft.</p>
         </div>
-        <small>Componentes, dados e estado • Fase 3</small>
+        <small>Dados externos, carregamento e erro • Fase 4</small>
       </div>
     </footer>
   )

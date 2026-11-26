@@ -315,6 +315,120 @@ h1 {
   text-align: center;
 }
 
+.load-state {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 32px 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.load-state strong {
+  font-size: 16px;
+}
+
+.load-state p {
+  max-width: 520px;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.load-state button {
+  min-height: 40px;
+  padding-inline: 18px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--ink);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.load-state button:hover {
+  background: var(--green-dark);
+}
+
+.load-state button:active {
+  transform: translateY(1px);
+}
+
+.load-state button:focus-visible {
+  outline: 3px solid rgba(25, 165, 90, 0.25);
+  outline-offset: 2px;
+}
+
+.load-state--error {
+  border-color: rgba(163, 48, 48, 0.24);
+  background: #fff8f8;
+}
+
+.world-card--skeleton {
+  pointer-events: none;
+}
+
+.skeleton {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  background: #e4e9e5;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.72), transparent);
+  animation: skeleton-loading 1.35s ease-in-out infinite;
+}
+
+.skeleton-image {
+  min-height: 164px;
+  border-radius: 0;
+}
+
+.skeleton-title {
+  width: 58%;
+  height: 20px;
+  margin-bottom: 14px;
+}
+
+.skeleton-line {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 9px;
+}
+
+.skeleton-line--short {
+  width: 76%;
+}
+
+.skeleton-meta {
+  width: 100%;
+  height: 38px;
+  margin-top: auto;
+}
+
+@keyframes skeleton-loading {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    animation: none;
+  }
+}
+
 .world-card {
   min-width: 0;
   display: grid;
